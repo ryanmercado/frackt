@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15%;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100000;
+  background-color: rgb(184, 157, 8, 0.7);
+  transition: top 0.3s;
+}
+
+header .logo {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a.active,
+header ul li a:hover {
+  background: #fff;
+  color: #5e6805;
+}
+
+section:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+    background: linear-gradient(to top, #949494, transparent);
+  z-index: 1000;
+}
+
+#mountains_behind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+  position: fixed;
+  mix-blend-mode: screen;
+}
+
+#text {
+  left: 10%;
+  position: absolute;
+  color: #fff;
+  top: 200px;
+  white-space: nowrap;
+  font-size: 50px;
+  right: 75%;
+  line-height: 28px;
+}
+
+
+
+.sec {
+  position: sticky;
+  min-height: 500px;
+  width: 100%;
+  /* padding: 100px; */
+  background: rgb(211, 211, 211);
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: rgb(0, 0, 0);
+  left: 10%;
+}
+
+.sec p {
+    text-align:center;
+  font-size: 1.2em;
+  color: rgb(0, 0, 0);
+}
+
+#countdown-container {
+  display: inline-block;
+  /*displays divs on a line*/
+  width: 300px;
+  /*gives the div element a width of 300px*/
+  margin-top: 400px;
+  /*gives 20px space at the top and bottom of the div element*/
+  border-radius: 5px;
+  /*curves the edges of the div element by 5px;*/
+  background: #000000;
+  /*gives the div element a background color*/
+  z-index: 50;
+}
+
+#countdown {
+  font-family: "Fira Sans", sans-serif;
+  /*changes the text font in the divelement */
+  display: inline-block;
+  /*displays divs on a line*/
+  padding: 20px;
+  /*creates 30px space between the content of the div element and the walls of the div element*/
+  background: #000000;
+  color: white;
+  /*changes the text color in the div element*/
+  z-index: 50;
+}
+
+#countdown span {
+  font-weight: bold;
+  /*boldens text in the span element*/
+  font-size: 30px;
+  /*changes the text size in the span element*/
+  z-index: 50;
+}
+
+.clock {
+  display: flex;
+  font-size: 75px;
+  align-content: space-around;
+  z-index: 100;
+  color: white;
+  padding-right: 70px;
+}
+
+.clockNumbers {
+  font-size: 40px;
+  color: rgb(184, 158, 8);
+}
+
+.clockContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 70%;
+  height: 18%;
+  padding: 10px;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.808);
+  top: 70%;
+}
+
+.presaleDiv {
+  font-size: 30px;
+  color: rgb(184, 157, 8, 0.7);
+  padding-left: 70px;
+}
+
+.comingSoon {
+  font-size: 20px;
+  color: rgb(184, 158, 8)
+}
+
+.joinDiscorda {
+  display: flex;
+  position: relative;
+  font-size: 80px;
+  color: white;
+  text-decoration: none;
+}
+
+.joinDiscorda:hover {
+  text-decoration: underline;
+  color: rgb(184, 157, 8, 0.7);
+}
+
+.joinDiscord {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 400px;
+  width: 60%;
+  background-color: black;
+  left: 20%;
+  margin-top: 3%;
+  margin-bottom: 10%;
+  align-items: center;
+}
+
+.hyperlinks {
+  background-color: black;
+  height: 10%;
+  background-color: rgb(184, 157, 8, 0.7);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+#discordHyper {
+  height: 50px;
+  width: 80px;
+  position: relative;
+  left: 45%;
+  bottom: 15px;
+}
+
+#twitterHyper {
+  position: relative;
+  left: 45%;
+  height: 80px;
+  width: 100px;
+}
+
+div.item1 {
+  /* To correctly align image, regardless of content height: */
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+div.item2 {
+  /* To correctly align image, regardless of content height: */
+  vertical-align: top;
+  display: inline-block;
+  /* To horizontally center images and caption */
+  text-align: center;
+  /* The width of the container also implies margin around the images. */
+  width: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column-reverse;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  justify-content: center;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.caption1,.caption2 {
+  font-size: larger;
+  padding-top: 10px;
+}
+
+
+.itemContainer1 {
+  position: relative;
+  left: 18%;
+  padding-top: 40px;
+  width: 1200px;
+}
+
+.itemContainer2 {
+  position: relative;
+  left: 24%;
+  margin-top: 50px;
+  width: 1200px;
+}
+
+.imgDiv1 {
+  width: 600px;
+  height: 600px;
+}
+
+.imgDiv2 {
+  width: 600px;
+  height: 600px;
+}
+
+.h1Header{
+  font-size: xx-large;
+}

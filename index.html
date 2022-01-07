@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>frackt</title>
+    <meta name="viewport" /> 
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="app.js"></script>
+  <link rel="icon" href="favicon.png">
+</head>
+
+<body style ='width: 100%; min-width:1580px'>
+  <header id="header">
+    <a href="#" class="logo">Frackt</a>
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="Designs.html">Designs</a></li>
+      <li><a href="Roadmap.html">Roadmap</a></li>
+      <li><a href="FAQ.html">FAQ</a></li>
+      <li><a href="About.html">About</a></li>
+    </ul>
+  </header>
+  <section>
+    <img src="https://i.ibb.co/CPs8yqQ/bg.png" style="max-width:100%;height:100vh" id="mountains_behind">
+    <h2 id="text" style='left:10%'>FRACKT <br><br>NFTs generated <br><br>from random math</h2>
+
+    </head>
+
+    <body>
+      <div class='clockContainer' >
+        <div class="clock" >
+          <p class='clockNumbers' style="font-size:35px; color:white" id="days"></p>
+          <p class='clockNumbers' style="font-size:35px; color:white" id="hours"></p>
+          <p class='clockNumbers' style="font-size:35px; color:white" id="mins"></p>
+          <p class='clockNumbers' style="font-size:35px; color:white" id="secs"></p>
+          <h2 class='clockNumbers' id="end"></h2>
+        </div>
+        <div class='fracktPrice'>
+          <div class='comingSoon' style="font-size:12px" >FRACKT Price:</div>
+          <div class='comingSoon' style="font-size:30px; color:white" >0.06 ETH</div>
+        </div>
+        <div class='presaleDiv'>
+          <div class='comingSoon' style="font-size:12px">Presale:</div>
+          <div class='comingSoon' style="font-size:30px; color:white">Coming Soon...</div>
+        </div>
+      </div>
+      <script>
+        // The data/time we want to countdown to
+        var countDownDate = new Date("jan 14, 2022 16:00:00").getTime();
+
+        // Run myfunc every second
+        var myfunc = setInterval(function () {
+
+          var now = new Date().getTime();
+          var timeleft = countDownDate - now;
+
+          // Calculating the days, hours, minutes and seconds left
+          var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+          let secs = document.getElementById("secs");
+          let hrs = document.getElementById("hours");
+          let min = document.getElementById("mins");
+          let day = document.getElementById("days");
+          let ed = document.getElementById("end")
+
+          if (seconds <= 9) {
+            secs.innerHTML = `:0${seconds}`
+          } else {
+            secs.innerHTML = `:${seconds}`
+          }
+          if (minutes <= 9) {
+            min.innerHTML = `:0${minutes}`
+          } else {
+            min.innerHTML = `:${minutes}`
+          }
+          if (hours <= 9) {
+            hrs.innerHTML = `:0${hours}`
+          } else {
+            hrs.innerHTML = `:${hours}`
+          }
+          day.innerHTML = `${days}`
+          if (timeleft < 0) {
+            clearInterval(myfunc);
+            day.innerHTML = ""
+            hrs.innerHTML = ""
+            min.innerHTML = ""
+            secs.innerHTML = ""
+            ed.innerHTML = "TIME UP!!";
+          }
+        }, 1000);
+      </script>
+    </body>
+
+
+</html>
+<script>
+
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      document.getElementById("header").style.fontSize = "15px";
+    } else {
+      document.getElementById("header").style.fontSize = "15px";
+    }
+  }
+</script>
+
+<script src="style.js"></script>
+</body>
+</script>
+<div class="content">
+
+  </section>
+  <div class="sec">
+    <div class='itemContainer1'>
+      <div class="item1">
+        <img class='imgDiv1'
+          src="isu2.gif" />
+        <div class="headerContainer">
+          <h1 class='h1Header'>Welcome to FRACKT.</h1>
+          <span class="caption1">Join the NFT fractal community</span>
+          <span class="caption2">NFT projects so far have primarily been images generated from dozens of photo layers,
+            that are combined to generate thousands of NFTs. By using the beauty of math to generate fractals, FRACKT
+            steers away from this formula to introduce a new, more beautiful NFT. This project brings a whole new
+            meaning to unique NFTs by using formulas to create many complex 3D fractals that are completely different
+            from the rest of the FRACKT collection. Check out the gallery page to see how crazy the variation is.</span>
+        </div>
+      </div>
+    </div>
+    <div class='itemContainer2'>
+      <div class="item2">
+        <div class="headerContainer">
+          <h1 class='h1Header'>Join the community before presale!</h1>
+          <span class="caption1">Presale will begin on January 14th at 4pm CST with 250 FRACKTs
+          </span>
+          <span class="caption2">Only 1000 unique FRACKTs will be minted, starting at 0.06 ETH each</span>
+        </div>
+        <img class='imgDiv2'
+          src="https://images-ext-1.discordapp.net/external/bfG6ZtMVU5hSdMLU-qOpvE9is1BZk9rO6c18GWkiFOU/https/i.ibb.co/FhNLz9t/FE3q-TPZWUAMYYlv.jpg?width=672&height=672" />
+      </div>
+    </div>
+    <div class='joinDiscord'>
+        <p style ='color:white;font-size:45px'class='joinDiscorda'>Discord will be released with FRACKT</p>
+      <!--
+      <a href="https://discord.gg/vyCDwUCTrE" class='joinDiscorda'>Join the Discord</a>
+      -->
+    </div>
+    </script>
+    <footer>
+      <div class='hyperlinks'>
+        <a href="">
+          <img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" id="discordHyper">
+        </a>
+        <a href="https://twitter.com/real_frackt">
+          <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" id="twitterHyper">
+        </a>
+      </div>
+ 
+  </footer>
+  </body>
+
+  </html>

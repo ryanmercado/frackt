@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+section
+{
+ display: flex;
+ justify-content: center;
+ padding-top: 50px ;
+ flex-direction: column;
+ align-items: center;
+ 
+}
+header
+{
+  position:fixed;
+  left: 0;
+  width: 100%;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: rgb(184, 157, 8,0.7) ;
+  transition: top 0.3s;
+}
+header .logo
+{
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li
+{
+  list-style: none;
+  margin-left: 20px;
+}
+header ul li a
+{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+header ul li a.active,
+header ul li a:hover
+{
+  background: #fff;
+  color: #5e6805;
+}
+
+body{
+    background-color: rgb(211, 211, 211);
+    position: relative;
+}
+
+.questionsContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+
+}
+
+.questionBox{
+  background-color: rgb(184, 157, 8, 0.5);
+  padding: 50px;
+}
+
+.headerQuestion{
+  font-size: 30px;
+}
+
+.answer{
+  font-size: 20px;
+  padding: 10px;
+}
+
+.nftImage{
+  margin-top: 200px;
+  height: 700px;
+  width: 700px;
+}
+
+.FAQ{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.hyperlinks{
+  background-color: black;
+  height: 10%;
+  background-color: rgb(184, 157, 8, 0.7);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 20%;
+}
+
+#discordHyper{
+  height: 50px;
+  width: 80px;
+  position: relative;
+  left: 45%;
+  bottom:15px;
+}
+
+#twitterHyper{
+  position: relative;
+  left: 45%;
+  height: 80px;
+  width: 100px;
+}
